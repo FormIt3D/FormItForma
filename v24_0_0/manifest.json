@@ -1,0 +1,6 @@
+{
+    "PluginName": "FormIt Forma",
+    "PluginDescription": "Forma plug-in for Autodesk® FormIt Pro®",
+    "Platforms": ["Windows"],
+    "DLLs" : ["PLUGINLOCATION/FormItFormaAddIn.dll"]
+}
