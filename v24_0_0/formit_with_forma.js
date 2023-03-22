@@ -1,17 +1,17 @@
-window.FormIt.FormaAddIn = window.FormIt.LumionLiveSync || {};
+window.FormIt.FormaAddIn = window.FormIt.FormaAddIn || {};
 
 window.FormIt.FormaAddIn.SaveCurrentAXMtoTemp = function(bSelectedOnly) {
     args = {
         TestAPI: "FormIt.FormaAddIn.SaveCurrentAXMtoTemp",
-        OptimizeGeometries:bSelectedOnly
+        bSelectedOnly:bSelectedOnly
     };
     return callAsyncAPI(args);
 };
 
-window.FormIt.FormaAddIn.DeleteTempFile = function(path) {
+window.FormIt.FormaAddIn.DeleteTempFile = function(aPath) {
     args = {
-        TestAPI: "FormIt.FormaAddIn.DeleteTempFile"
-        OptimizeGeometries:path
+        TestAPI: "FormIt.FormaAddIn.DeleteTempFile",
+        aPath:aPath
     };
     return callAsyncAPI(args);
 };
