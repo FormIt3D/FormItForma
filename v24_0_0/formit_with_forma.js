@@ -8,6 +8,15 @@ window.FormIt.FormaAddIn.SaveCurrentAXMtoTemp = function(bSelectedOnly) {
     return callAsyncAPI(args);
 };
 
+window.FormIt.FormaAddIn.ReadFile = function(aPath) {
+    args = {
+        TestAPI: "FormIt.FormaAddIn.ReadFile",
+        aPath:aPath
+    };
+    return callAsyncAPI(args);
+};
+
+
 window.FormIt.FormaAddIn.DeleteTempFile = function(aPath) {
     args = {
         TestAPI: "FormIt.FormaAddIn.DeleteTempFile",
