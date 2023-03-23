@@ -1,21 +1,28 @@
 window.FormIt.FormaAddIn = window.FormIt.FormaAddIn || {};
 
-window.FormIt.FormaAddIn.SaveCurrentAXMtoTemp = function(bSelectedOnly) {
+window.FormIt.FormaAddIn.SaveCurrentAXMtoTempFile = function(bSelectedOnly) {
     args = {
-        TestAPI: "FormIt.FormaAddIn.SaveCurrentAXMtoTemp",
+        TestAPI: "FormIt.FormaAddIn.SaveCurrentAXMtoTempFile",
         bSelectedOnly:bSelectedOnly
     };
     return callAsyncAPI(args);
 };
 
-window.FormIt.FormaAddIn.ReadFile = function(aPath) {
+window.FormIt.FormaAddIn.ReadAXMandMakeBlob = function(aPath) {
     args = {
-        TestAPI: "FormIt.FormaAddIn.ReadFile",
+        TestAPI: "FormIt.FormaAddIn.ReadAXMandMakeBlob",
         aPath:aPath
     };
     return callAsyncAPI(args);
 };
 
+window.FormIt.FormaAddIn.ImportAXMBlob = function(blob) {
+    args = {
+        TestAPI: "FormIt.FormaAddIn.ReadAXMandMakeBlob",
+        blob:blob
+    };
+    return callAsyncAPI(args);
+};
 
 window.FormIt.FormaAddIn.DeleteTempFile = function(aPath) {
     args = {
