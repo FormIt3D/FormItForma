@@ -24,6 +24,23 @@ window.FormIt.FormaAddIn.ImportAXMBlob = function(blob) {
     return callAsyncAPI(args);
 };
 
+window.FormIt.FormaAddIn.MakeBlobFile = function(aPath, blob) {
+    args = {
+        TestAPI: "FormIt.FormaAddIn.MakeBlobFile",
+        aPath:aPath,
+        blob:blob
+    };
+    return callAsyncAPI(args);
+};
+
+window.FormIt.FormaAddIn.CreateTempPath = function(aFile) {
+    args = {
+        TestAPI: "FormIt.FormaAddIn.CreateTempPath",
+        aFile:aFile
+    };
+    return callAsyncAPI(args);
+};
+
 window.FormIt.FormaAddIn.DeleteTempFile = function(aPath) {
     args = {
         TestAPI: "FormIt.FormaAddIn.DeleteTempFile",
@@ -31,6 +48,7 @@ window.FormIt.FormaAddIn.DeleteTempFile = function(aPath) {
     };
     return callAsyncAPI(args);
 };
+
 
 
 
